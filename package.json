@@ -3,8 +3,13 @@
   "version": "2.0.0",
   "description": "Bot WhatsApp canggih dengan 100 fitur, pairing code, dan deploy ke Railway",
   "main": "bot.js",
+  "engines": {
+    "node": ">=16.0.0",  // TAMBAHAN: Spesifik versi Node.js untuk Railway
+    "npm": ">=8.0.0"
+  },
   "scripts": {
-    "start": "node bot.js"
+    "start": "node bot.js",
+    "postinstall": "npx puppeteer browsers install chromium"  // TAMBAHAN: Install Chromium untuk Puppeteer di Railway
   },
   "dependencies": {
     "whatsapp-web.js": "^1.23.0",
@@ -13,7 +18,7 @@
     "moment-timezone": "^0.5.43",
     "node-cron": "^3.0.3",
     "sharp": "^0.33.0",
-    "puppeteer": "^21.0.0"  // TAMBAHAN: Untuk Railway
+    "puppeteer": "^21.0.0"
   },
   "keywords": ["whatsapp", "bot", "nodejs", "ai"],
   "author": "Your Name",
