@@ -12,7 +12,8 @@
     "axios": "^1.6.0",
     "moment-timezone": "^0.5.43",
     "node-cron": "^3.0.3",
-    "sharp": "^0.33.0"
+    "sharp": "^0.33.0",
+    "puppeteer": "^21.0.0"  // TAMBAHAN: Untuk Railway
   },
   "keywords": ["whatsapp", "bot", "nodejs", "ai"],
   "author": "Your Name",
