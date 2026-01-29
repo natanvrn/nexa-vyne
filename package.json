@@ -4,12 +4,12 @@
   "description": "Bot WhatsApp canggih dengan 100 fitur, pairing code, dan deploy ke Railway",
   "main": "bot.js",
   "engines": {
-    "node": ">=16.0.0",  // TAMBAHAN: Spesifik versi Node.js untuk Railway
+    "node": ">=16.0.0",
     "npm": ">=8.0.0"
   },
   "scripts": {
     "start": "node bot.js",
-    "postinstall": "npx puppeteer browsers install chromium"  // TAMBAHAN: Install Chromium untuk Puppeteer di Railway
+    "postinstall": "npx puppeteer browsers install chromium"
   },
   "dependencies": {
     "whatsapp-web.js": "^1.23.0",
